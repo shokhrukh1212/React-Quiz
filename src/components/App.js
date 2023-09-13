@@ -95,7 +95,7 @@ export default function App() {
   useEffect(function () {
     async function fetchQuestions() {
       try {
-        const res = await fetch("questions");
+        const res = await fetch("/questions");
         const data = await res.json();
 
         dispatch({ type: "dataRecieved", payload: data });
