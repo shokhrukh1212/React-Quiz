@@ -78,7 +78,8 @@ function reducer(state, action) {
         status: state.remainingSeconds === 0 ? "finished" : state.status,
       };
     default:
-      throw new Error("Unknown action");
+      // throw new Error("Unknown action");
+      console.log("Default action");
   }
 }
 
